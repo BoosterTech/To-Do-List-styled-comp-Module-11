@@ -1,26 +1,26 @@
 import React from "react";
-import "./style.css";
+import { Button, ButtonsWrapper } from "./styled";
 
 const Buttons = ({ tasks, hideDoneTasksVar, toggleHideDone, setAllDone }) =>
   tasks.length > 0 && (
-    <span className=" buttons">
-      <button
+    <ButtonsWrapper>
+      <Button
         className="buttons__button"
         onClick={toggleHideDone}
         disabled={!tasks.some(({ done }) => done)}
       >
         {" "}
         {hideDoneTasksVar ? "Pokaż" : "Ukryj"} ukończone{" "}
-      </button>
-      <button
+      </Button>
+      <Button
         className="buttons__button"
         disabled={tasks.every(({ done }) => done)}
         onClick={setAllDone}
       >
         {" "}
         Ukończ wszystkie{" "}
-      </button>
-    </span>
+      </Button>
+    </ButtonsWrapper>
   );
 
 export default Buttons;
