@@ -54,9 +54,9 @@ function App() {
       <Section
         title="Dodaj nowe zadanie"
         bodyContent={<Form addNewTask={addNewTask} />}
-        headerType="section__header--top"
+        headerType="section__headerTop"
       />
-      <Section
+      <Section 
         title="Lista zadań"
         extraHeaderContent={
           <Buttons
