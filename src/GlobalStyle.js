@@ -13,7 +13,7 @@ html {
 body {
   background-color: rgb(221, 215, 215);
   font-family: 'Montserrat', sans-serif;
-  max-width: 70%;
+  max-width: 80%;
   width: 1000px;
   margin: auto;
   padding: 15px;

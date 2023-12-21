@@ -15,7 +15,6 @@ const Form = ({ addNewTask }) => {
     <TaskForm onSubmit={onFormSubmit}>
       <Input
         value={newTaskContent}
-        className="taskForm__input "
         type="text"
         placeholder="Co jest do zrobienia?"
         onChange={({ target }) => setNewTaskContent(target.value)}
