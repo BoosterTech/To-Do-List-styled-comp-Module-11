@@ -5,19 +5,23 @@ export const Wrapper = styled.section`
   margin: 10px 0;
 `;
 
-export const Container = styled.div`
-  ${({ section__flex }) =>
-    section__flex &&
+export const SectionContainer = styled.div`
+  background-color: white;
+  margin: 10px 0;
+
+  ${(props) =>
+    props.section__flex &&
     CSS`
       display: flex;
       flex-direction: row;
-    `}
-  @media (max-width: 768px) {
-    flex-direction: column;
-  }
+
+      @media (max-width: 768px) {
+      flex-direction: column;
+      }
+  `}
 `;
 
-export const HeaderType = styled.h2`
+export const Header = styled.h2`
   ${(props) =>
     props.section__headerTop &&
     CSS`

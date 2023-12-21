@@ -1,6 +1,5 @@
 import React from "react";
-// import "./style.css";
-import { Container, Wrapper, HeaderType } from "./styled";
+import { Header, SectionContainer, Wrapper } from "./styled";
 
 const Section = ({
   title,
@@ -10,10 +9,10 @@ const Section = ({
   headerType,
 }) => (
   <Wrapper>
-    <Container {id}>
-      <HeaderType headerType>{title}</HeaderType>
+    <SectionContainer>
+      <Header headerType >{title}</Header>
       {extraHeaderContent}
-    </Container>
+    </SectionContainer>
     {bodyContent}
   </Wrapper>
 );
