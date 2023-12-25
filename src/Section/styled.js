@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.section`
-  background-color: white;
+  background-color: ${({ theme }) => theme.color.White};
   margin: 10px 0;
 `;
 
 export const SectionContainer = styled.div`
-  background-color: white;
+  background-color: ${({ theme }) => theme.color.White};
   margin: 10px 0;
 
   ${(props) =>
@@ -15,7 +15,7 @@ export const SectionContainer = styled.div`
       display: flex;
       flex-direction: row;
 
-      @media (max-width: 768px) {
+      @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
       flex-direction: column;
       } 
     `}
