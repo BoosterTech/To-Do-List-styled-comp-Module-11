@@ -19,11 +19,11 @@ export const ButtonsWrapper = styled.span`
 export const Button = styled.button`
   background-color: transparent;
   border: none;
-  color: rgb(75, 70, 70);
+  color: ${({ theme }) => theme.color.Tundora};
   transition: color 0.3s;
 
   &:hover {
-    color: rgb(0, 0, 0);
+    color: ${({ theme }) => theme.color.Black};
     cursor: pointer;
   }
 
@@ -32,10 +32,10 @@ export const Button = styled.button`
   }
 
   &:disabled {
-    color: rgb(170, 162, 162);
+    color: ${({ theme }) => theme.color.Martini};
   }
 
-  @media (max-width: 745px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     flex-basis: 100%;
     margin: 10px;
     width: 121px;
