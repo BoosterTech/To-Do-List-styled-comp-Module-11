@@ -30,12 +30,12 @@ export const Button = styled.button`
   width: 30px;
   height: 30px;
   transition: 0.3s;
-  color: white;
+  color: ${({ theme }) => theme.color.White};
 
   ${(props) =>
     props.done &&
     `
-    background-color: rgb(19, 145, 15);
+    background-color: #13910f;
     border: 1px solid rgb(17, 129, 13);
 
     &:hover {
