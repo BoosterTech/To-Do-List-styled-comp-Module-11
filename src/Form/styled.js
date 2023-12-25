@@ -6,7 +6,7 @@ export const TaskForm = styled.form`
   grid-template-columns: 1fr auto;
   gap: 20px;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     grid-template-columns: 1fr;
   }
 `;
@@ -22,7 +22,7 @@ export const Button = styled.button`
   padding: 7px;
   height: 31.6px;
   background-color: rgb(21, 117, 117);
-  color: white;
+  color: ${({ theme }) => theme.color.White};
   border: 1px solid rgb(9, 99, 99);
   transition: 0.4s;
   text-align: center;
@@ -34,7 +34,7 @@ export const Button = styled.button`
 
   &:hover {
     transform: scale(1.1);
-    background-color: rgba(25, 114, 114, 0.877);
+    background-color: ${({theme})=>theme.color.Martini_Hover};
     cursor: pointer;
   }
 `;
