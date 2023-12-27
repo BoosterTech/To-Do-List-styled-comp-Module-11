@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useLocalStorage } from "./useLocalStorage";
 
 const getTasks = () => {
   const myTasks = localStorage.getItem("tasksData");
 
-  return myTasks ? JSON.parse(myTasks) : [];
+  return myTasks === null ? [] : JSON.parse(myTasks);
 };
 
 export const useTasks = () => {
