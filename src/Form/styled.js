@@ -34,7 +34,7 @@ export const Button = styled.button`
 
   &:hover {
     transform: scale(1.1);
-    background-color: ${({theme})=>theme.color.Martini_Hover};
+    background-color: ${({ theme }) => theme.color.Martini_Hover};
     cursor: pointer;
   }
 `;

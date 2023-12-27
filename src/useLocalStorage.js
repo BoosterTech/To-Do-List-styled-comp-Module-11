@@ -4,5 +4,4 @@ export const useLocalStorage = (tasks) => {
   useEffect(() => {
     localStorage.setItem("tasksData", JSON.stringify(tasks));
   }, [tasks]);
-
 };
