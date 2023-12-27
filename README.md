@@ -2,8 +2,8 @@
 ## "Lista Zadań" - add tasks to the list, mark them done or undone, use single button to mark ALL DONE, hide done tasks, as well as remove tasks from the list
 ## Technologies used:
 - HTML, CSS, JavaScript (including "ECMAScript 6" features)
-- BEM convention
 - React
+- Styled components
 
 ### Demo: https://boostertech.github.io/TODO-List-React/
 Wide screen:
