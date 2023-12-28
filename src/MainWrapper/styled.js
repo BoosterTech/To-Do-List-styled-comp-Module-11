@@ -1,5 +1,5 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.main`
+export const MainWrapper = styled.main`
   margin: 0;
 `;
