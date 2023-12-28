@@ -8,10 +8,10 @@ import Container from "./Container";
 import { useTasks } from "./useTasks";
 
 function App() {
-  const [hideDoneTasksVar, setHideDoneTasks] = useState(false);
+  const [hideDoneTasks, setHideDoneTasks] = useState(false);
 
   const toggleHideDone = () =>
-    setHideDoneTasks((hideDoneTasksVar) => !hideDoneTasksVar);
+    setHideDoneTasks((hideDoneTasks) => !hideDoneTasks);
 
   const { tasks, removeTask, toggleTaskDone, setAllDone, addNewTask } =
     useTasks();
@@ -29,7 +29,7 @@ function App() {
         extraHeaderContent={
           <Buttons
             tasks={tasks}
-            hideDoneTasksVar={hideDoneTasksVar}
+            hideDoneTasks={hideDoneTasks}
             toggleHideDone={toggleHideDone}
             setAllDone={setAllDone}
           />
@@ -37,7 +37,7 @@ function App() {
         bodyContent={
           <Tasks
             tasks={tasks}
-            hideDoneTasksVar={hideDoneTasksVar}
+            hideDoneTasks={hideDoneTasks}
             removeTask={removeTask}
             toggleTaskDone={toggleTaskDone}
           />
