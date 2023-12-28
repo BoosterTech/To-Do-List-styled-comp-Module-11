@@ -1,14 +1,17 @@
 import { useState } from "react";
 import { useLocalStorage } from "./useLocalStorage";
+import { exampleTasks } from "./exampleTasks";
 
 const getTasks = () => {
   const myTasks = localStorage.getItem("tasksData");
 
-  return myTasks === null ? [] : JSON.parse(myTasks);
+  return myTasks === null || JSON.parse(myTasks).length === 0
+    ? exampleTasks
+    : JSON.parse(myTasks);
 };
 
 export const useTasks = () => {
-  const [tasks, setTasks] = useState(getTasks);
+  const [tasks, setTasks] = useState(() => getTasks());
 
   useLocalStorage(tasks);
 

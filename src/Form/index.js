@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-
 import { Button, Input, TaskForm } from "./styled";
 
 const Form = ({ addNewTask }) => {
