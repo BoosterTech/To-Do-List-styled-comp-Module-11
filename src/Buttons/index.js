@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, ButtonsWrapper } from "./styled";
 
-const Buttons = ({ tasks, hideDoneTasksVar, toggleHideDone, setAllDone }) =>
+const Buttons = ({ tasks, hideDoneTasks, toggleHideDone, setAllDone }) =>
   tasks.length > 0 && (
     <ButtonsWrapper>
       <Button
@@ -9,7 +9,7 @@ const Buttons = ({ tasks, hideDoneTasksVar, toggleHideDone, setAllDone }) =>
         disabled={!tasks.some(({ done }) => done)}
       >
         {" "}
-        {hideDoneTasksVar ? "Pokaż" : "Ukryj"} ukończone{" "}
+        {hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone{" "}
       </Button>
       <Button disabled={tasks.every(({ done }) => done)} onClick={setAllDone}>
         {" "}
