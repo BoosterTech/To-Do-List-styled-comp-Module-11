@@ -2,7 +2,7 @@
   "name": "todo-list-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://boostertech.github.io/TODO-List-React/",
+  "homepage": "https://boostertech.github.io/to-do-list-react-styled-comp/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
